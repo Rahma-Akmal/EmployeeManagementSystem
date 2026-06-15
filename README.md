@@ -47,3 +47,4 @@ dotnet ef database update
 * Update the SQL Server connection string inside `appsettings.json`
 * The project includes custom error handling and validation
 * Built as part of a technical assessment task
+* Search onKey Enter
