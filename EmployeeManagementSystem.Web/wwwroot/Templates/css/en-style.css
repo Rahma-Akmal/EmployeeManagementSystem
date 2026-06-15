@@ -1,0 +1,320 @@
+﻿*:not(button):not(td), html, body {
+    direction: ltr;
+    text-align: start !important;
+}
+
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td {
+    text-align: left;
+}
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+    text-align: start;
+}
+table.dataTable td {
+    text-align: start;
+    transform: translateX(18px) !important;
+}
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td {
+    text-align: start !important;
+}
+table.dataTable thead > tr > th.dt-orderable-asc, table.dataTable thead > tr > th.dt-orderable-desc, table.dataTable thead > tr > th.dt-ordering-asc, table.dataTable thead > tr > th.dt-ordering-desc, table.dataTable thead > tr > td.dt-orderable-asc, table.dataTable thead > tr > td.dt-orderable-desc, table.dataTable thead > tr > td.dt-ordering-asc, table.dataTable thead > tr > td.dt-ordering-desc {
+    position: relative;
+    padding-left: 30px !important;
+    padding-right: 0 !important;
+}
+#CollectionTable.dataTable thead > tr > th.dt-orderable-asc,
+#CollectionTable.dataTable thead > tr > th.dt-orderable-desc,
+#CollectionTable.dataTable thead > tr > th.dt-ordering-asc,
+#CollectionTable.dataTable thead > tr > th.dt-ordering-desc,
+#CollectionTable.dataTable thead > tr > td.dt-orderable-asc,
+#CollectionTable.dataTable thead > tr > td.dt-orderable-desc,
+#CollectionTable.dataTable thead > tr > td.dt-ordering-asc,
+#CollectionTable.dataTable thead > tr > td.dt-ordering-desc {
+    position: relative !important;
+    padding-left: 12px !important;
+    padding-right: 0px !important;
+}
+
+#CollectionTable.dataTable td {
+    transform: translateX(-1px) !important;
+}
+
+#ProductsTable.dataTable thead > tr > th.dt-orderable-asc,
+#ProductsTable.dataTable thead > tr > th.dt-orderable-desc,
+#ProductsTable.dataTable thead > tr > th.dt-ordering-asc,
+#ProductsTable.dataTable thead > tr > th.dt-ordering-desc,
+#ProductsTable.dataTable thead > tr > td.dt-orderable-asc,
+#ProductsTable.dataTable thead > tr > td.dt-orderable-desc,
+#ProductsTable.dataTable thead > tr > td.dt-ordering-asc,
+#ProductsTable.dataTable thead > tr > td.dt-ordering-desc {
+    position: relative !important;
+    padding-right: 0px !important;
+    padding-left: 12px !important;
+}
+#ProductsTable.dataTable td {
+    transform: translateX(3px) !important;
+}
+.main-table th, .main-table td {
+
+    text-align: left;
+}
+
+    .permission-title input, .title-icon.permissions-master {
+        margin-right: 6px !important;
+        margin-left: 0px !important;
+        vertical-align: middle !important;
+    }
+
+    .addbtn-icon {
+        width: 12px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .sidebar {
+        right: unset;
+        left: 0;
+        border-right: 1px solid #D8EBE7;
+        border-left: unset;
+    }
+
+    .table-controls .pagination {
+        display: flex;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        margin-right: 200px;
+        margin-left: 0px;
+    }
+    /*.sidebar-top {
+    flex-direction: row-reverse;
+}*/
+    .page {
+        margin-right: unset;
+        /*margin-left: 250px;*/
+    }
+
+    .sidebar-menu h2, .lang-btn {
+        text-align: start !important;
+    }
+    /* exception for loader */
+    .logo-loader {
+        text-align: right !important;
+    }
+
+    .edit-card {
+        direction: ltr;
+    }
+
+    .addition_nav {
+        right: 20px!important;
+    }
+.filters input[type="date"] {
+    justify-content: start;
+}
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        left: unset;
+        right: 1em;
+    }
+
+    .radio-item span::before {
+        left: 0;
+    }
+
+    .radio-item input:checked + span::after {
+        left: 4px;
+    }
+
+    .radio-item {
+        padding-left: 30px;
+    }
+
+    .select2-container {
+        width: auto !important;
+    }
+
+    .select2-results__option {
+        text-align: start !important;
+        direction: ltr;
+        padding-left: 12px;
+        padding-right: 0px !important;
+    }
+
+    .handle-footer {
+        margin-left: 300px;
+        margin-right: 0px !important;
+        flex-direction: row-reverse;
+    }
+
+    .back-icon {
+        transform: rotate(180deg);
+    }
+
+
+.upload-icon {
+    text-align: center !important;
+}
+.upload-delete-btn {
+    text-align: center !important;
+}
+.gallery-upload .gallery-preview {
+    text-align: center !important;
+}
+.feature-input {
+    text-align: center !important;
+}
+.link-btn {
+    margin-left: 0px;
+    margin-right: 20px;
+}
+#selectedCount {
+    margin-right: 0px;
+    margin-left: 15px;
+}
+.profit_kpi {
+    text-align: center !important;
+}
+    .profit_kpi h3 {
+        text-align: center !important;
+    }
+.report-card {
+    flex-direction: row-reverse;
+}
+.search-bar input {
+    direction: ltr !important;
+    text-align: left !important;
+    unicode-bidi: plaintext;
+}
+    .search-bar input::placeholder {
+        direction: ltr;
+        text-align: left;
+        unicode-bidi: plaintext;
+    }
+.search-bar .search-icon {
+    right: 12px;
+    left: unset;
+}
+.location-arrow {
+    transform: scaleX(-1);
+}
+.progress-bar {
+    direction: ltr;
+}
+.item-variant {
+    right: -10px;
+    left: unset !important;
+}
+.timeline-item {
+    direction: ltr;
+}
+.card-icon {
+    transform: scaleX(1)!important;
+}
+.items-card .count {
+    text-align: center!important;
+}
+.price {
+    text-align: right !important;
+}
+.variant, .qty {
+    text-align: center !important;
+}
+    .search-bar input {
+        direction: ltr !important;
+        text-align: left !important;
+        unicode-bidi: plaintext;
+    }
+
+        .search-bar input::placeholder {
+            direction: ltr;
+            text-align: left;
+            unicode-bidi: plaintext;
+        }
+
+    .search-bar .search-icon {
+        right: 12px;
+        left: unset;
+    }
+
+    .progress-bar {
+        direction: ltr;
+    }
+
+.sidebar-top {
+    margin: unset;
+}
+.input-type {
+    right: 8px;
+    left: unset;
+}
+/* tables */
+@media (max-width: 992px) {
+    .page {
+        margin-right: unset;
+        margin-left: 0;
+    }
+
+    .sidebar {
+        transform: translateX(-110%);
+        transition: transform 0.4s ease;
+    }
+
+    .handle-footer {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .chart-header {
+        flex-direction: column;
+        align-items: flex-end !important;
+    }
+}
+
+.chart-header {
+    flex-direction: row-reverse;
+}
+
+.row-head {
+    flex-direction: row-reverse;
+}
+.modal-text {
+    text-align: center !important;
+}
+.login-meta {
+    flex-direction: row-reverse;
+}
+.footer-text {
+    text-align: center!important;
+}
+.loginimg-wrapper {
+    transform: scaleX(-1);
+}
+.show-icon {
+
+    right: 12px;
+    left:unset!important;
+}
+input[type="date"] {
+    direction: ltr!important;
+}
+
+#js-Categories + .select2-container {
+    width: 100% !important;
+}
+    #js-Categories + .select2-container .select2-selection--single {
+        width: 100% !important;
+    }
+#js-ReportForm select#IsActive + .select2-container {
+    width: 100% !important;
+}
+
+    #js-ReportForm select#IsActive + .select2-container
+    .select2-selection--single {
+        width: 100% !important;
+    }
+#reportModal .select2-container {
+    width: 100% !important;
+}
+    #reportModal .select2-container .select2-selection--single {
+        width: 100% !important;
+    }

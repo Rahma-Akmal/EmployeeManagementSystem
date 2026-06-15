@@ -1,0 +1,67 @@
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px; 
+}
+
+.category-card {
+    width: 286.2px;
+    height: 52px;
+    background: #FFFFFF;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px 0px #8E3B0033;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.card-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.edit-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.category-name {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: right;
+    color: #000;
+}
+
+.category-img {
+    width: 40px;
+    height: 36px;
+
+    border-radius: 8px;
+    border: 1px solid #D8EBE7;
+    object-fit: cover;
+}
+
+.page-title {
+    font-family: Cairo;
+    font-weight: 700!important;
+    color: #56596D!important;
+    font-size: 16px!important;
+    line-height: 100%!important;
+   letter-spacing: 0%!important;
+   text-align: right!important;
+   margin: 0!important;
+}
+.right-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 20px;
+}

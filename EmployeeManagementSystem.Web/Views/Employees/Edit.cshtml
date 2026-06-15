@@ -1,0 +1,109 @@
+﻿@model EmployeeFormViewModel
+
+@{
+    ViewData["Title"] = "Edit Employee";
+}
+
+@section Style {
+    <link href="~/templates/css/pages/addition.css" rel="stylesheet" />
+    <link href="~/templates/css/pages/modal.css" rel="stylesheet" />
+}
+
+<form id="employeeForm">
+
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+
+    <main class="page">
+
+        <nav class="addition_nav">
+            <div class="right-group">
+                <button type="button" class="back_button"
+                        onclick="window.location.href='@Url.Action("Index", "Employees")'">
+                    <img src="~/templates/assets/images/icons/back-blue.svg" class="back-icon">
+                </button>
+                <h2 class="page-title">Edit Employee</h2>
+            </div>
+            <div class="nav-left-buttons">
+                <button type="button" id="btnUpdate" class="btn-save">Update</button>
+            </div>
+        </nav>
+
+        <div class="page-grid">
+
+            <!-- Left -->
+            <div>
+                <div class="edit-card">
+                    <div class="input-title">Full Name</div>
+                    <input asp-for="FullName" class="brand-input rectangle" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+
+                <div class="edit-card">
+                    <div class="input-title">Email</div>
+                    <input asp-for="Email" class="brand-input rectangle" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="edit-card">
+                    <div class="input-title">Mobile Number</div>
+                    <input asp-for="MobileNumber" class="brand-input rectangle" />
+                    <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                </div>
+
+                <div class="edit-card">
+                    <div class="input-title">Job Title</div>
+                    <input asp-for="JobTitle" class="brand-input rectangle" />
+                    <span asp-validation-for="JobTitle" class="text-danger"></span>
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div>
+                <div class="edit-card">
+                    <div class="card-title">Hire Date</div>
+                    <input asp-for="HireDate"
+                           type="date"
+                           class="brand-input rectangle"
+                           value="@(Model.HireDate.HasValue ? Model.HireDate.Value.ToString("yyyy-MM-dd") : "")" />
+                    <span asp-validation-for="HireDate" class="text-danger"></span>
+                </div>
+
+                <div class="edit-card">
+                    <div class="card-title">Department</div>
+                    <div class="defult-select select-item">
+                        <select asp-for="DepartmentId"
+                                asp-items="Model.Departments"
+                                class="select2"
+                                id="department-select">
+                            <option value="">Select Department</option>
+                        </select>
+                    </div>
+                    <span asp-validation-for="DepartmentId" class="text-danger"></span>
+                </div>
+                <div class="edit-card">
+                    <div class="card-title">ٍStatus</div>
+                    <div class="defult-select select-item">
+                        <select asp-for="IsActive"
+                                class="select2"
+                                id="status-select"
+                                data-placeholder="اختر الحالة">
+
+                            <option value="true">Active</option>
+                            <option value="false">Inactive</option>
+
+                        </select>
+                    </div>
+                    <span asp-validation-for="IsActive" class="text-danger"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</form>
+
+@section Scripts {
+    <script src="~/modules/employee/edit.js"></script>
+}

@@ -1,0 +1,16 @@
+﻿.discount-applies label {
+    min-width: 120px;
+    margin-bottom: 0px;
+}
+.discount-value label {
+    min-width: 94px;
+    margin-bottom: 0px;
+}
+.discount-applies select,
+.discount-applies .select2-container .select2-selection--single {
+    width: 260px;
+}
+
+label.label-fit {
+    min-width: fit-content;
+}

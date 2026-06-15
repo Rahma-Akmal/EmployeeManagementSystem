@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Src/">
+    <Project Path="EmployeeManagementSystem.Application/EmployeeManagementSystem.Application.csproj" />
+    <Project Path="EmployeeManagementSystem.Domain/EmployeeManagementSystem.Domain.csproj" />
+    <Project Path="EmployeeManagementSystem.Infrastructure/EmployeeManagementSystem.Infrastructure.csproj" />
+    <Project Path="EmployeeManagementSystem.Web/EmployeeManagementSystem.Web.csproj" />
+  </Folder>
+</Solution>

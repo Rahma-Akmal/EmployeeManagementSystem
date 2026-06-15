@@ -1,0 +1,46 @@
+
+.right-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-family: Cairo;
+    font-weight: 600;
+
+    font-size: 23px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: rgba(0, 0, 0, 1);
+}
+.back-icon{
+  width: 28px;
+}
+.role-badge {
+    height: 32px;
+    background: #455956 /*#47546C*/;
+    color: #FFFFFF;
+    font-family: Cairo;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 32px;
+    border-radius: 99px;
+    padding: 0 6px;
+    margin-left: 6px;
+    margin-bottom: 3px;
+}
+td.roles-column, 
+th:nth-child(5),
+td:nth-child(5) {
+    white-space: nowrap !important;
+    width: 280px !important;
+}
+
+.dataLits-page .page-title {
+    color: #455956;
+}

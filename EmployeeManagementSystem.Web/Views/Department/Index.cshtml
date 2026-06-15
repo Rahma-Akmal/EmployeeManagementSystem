@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Departments";
+}
+
+@Html.AntiForgeryToken()
+
+@section Style {
+    <link href="~/templates/css/pages/modal.css" rel="stylesheet" />
+}
+
+<main class="page">
+
+    <div class="page-header">
+        <h2 class="page-title">Departments</h2>
+    </div>
+
+    <div class="filters-box">
+        <div class="search-bar">
+            <img src="~/templates/assets/images/icons/search.svg" class="search-icon">
+            <input type="text" id="js-Search" placeholder="Search department..." />
+        </div>
+        <div class="filters">
+            <button class="reset-filter" type="button" id="btnReset">
+                <img src="~/templates/assets/images/icons/filterVector.svg" class="filter-icon">
+                <span>Reset</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="table-box">
+        <table class="main-table" id="DepartmentsTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Department Name</th>
+                    <th>Employees Count</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div class="table-controls">
+        <div class="target-length"></div>
+        <div class="target-search"></div>
+        <div class="target-pagination"></div>
+        <div class="target-info"></div>
+    </div>
+
+</main>
+
+@section Scripts {
+    <script src="~/modules/department/index.js"></script>
+}

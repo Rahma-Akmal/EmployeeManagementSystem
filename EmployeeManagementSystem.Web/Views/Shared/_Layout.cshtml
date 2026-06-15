@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html  dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="~/templates/assets/libararies/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/templates/assets/libararies/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="~/templates/assets/libararies/dataTables-v2/datatables.min.css" />
+    <link rel="stylesheet" href="~/templates/assets/libararies/dataTables-v2/select/select.bootstrap4.min.css" />
+
+    <link href="~/templates/assets/libararies/quill/quill.snow.css" rel="stylesheet">
+    <!-- Base Styles -->
+    <link href="~/templates/css/base.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/templates/css/layout.css">
+    <link rel="stylesheet" href="~/templates/css/grid.css">
+    <link rel="stylesheet" href="~/templates/css/components.css">
+    <link href="~/templates/css/en-style.css" rel="stylesheet" />
+    @await RenderSectionAsync("Style", required: false)
+
+</head>
+
+<body>
+    <div class="layout">
+        <partial name="_adminnavbar" />
+        @RenderBody()
+    </div>
+    <partial name="_footer" />
+    <partial name="_adminscripts" />
+    <partial name="_ValidationScriptsPartial" />
+
+
+
+
+    @await Html.PartialAsync("_Modals")
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

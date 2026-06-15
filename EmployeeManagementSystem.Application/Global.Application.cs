@@ -1,0 +1,12 @@
+﻿global using EmployeeManagementSystem.Domain.Interfaces.IDataTable;
+global using EmployeeManagementSystem.Domain.Common.Pagination;
+global using Microsoft.EntityFrameworkCore;
+global using System.Linq.Dynamic.Core;
+global using EmployeeManagementSystem.Application.Dtos.Department;
+global using EmployeeManagementSystem.Application.ReturnObject;
+global using EmployeeManagementSystem.Application.Dtos.Employee;
+global using System.Text.Json.Serialization;
+global using EmployeeManagementSystem.Application.Extensions;
+global using EmployeeManagementSystem.Application.IServices;
+global using EmployeeManagementSystem.Domain.Entites;
+global using EmployeeManagementSystem.Domain.Interfaces.IUnitOfWork;

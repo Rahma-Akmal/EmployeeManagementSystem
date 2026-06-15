@@ -1,0 +1,204 @@
+﻿@model EmployeeFormViewModel
+
+@{
+    ViewData["Title"] = "Create Employee";
+}
+
+@section Style {
+    <link href="~/templates/css/pages/addition.css" rel="stylesheet" />
+    <link href="~/templates/css/pages/modal.css" rel="stylesheet" />
+}
+
+<form id="employeeForm">
+
+    @Html.AntiForgeryToken()
+
+    <main class="page">
+
+        <!-- ===== Top Navbar ===== -->
+        <nav class="addition_nav">
+
+            <div class="right-group">
+
+                <button type="button"
+                        class="back_button"
+                        onclick="window.location.href='@Url.Action("Index", "Employees")'">
+
+                    <img src="~/templates/assets/images/icons/back-blue.svg"
+                         class="back-icon">
+
+                </button>
+
+                <h2 class="page-title">
+                    Add Employee
+                </h2>
+
+            </div>
+
+            <div class="nav-left-buttons">
+
+                <button type="button"
+                        id="btnSave"
+                        class="btn-save">
+
+                    Save
+
+                </button>
+
+            </div>
+
+        </nav>
+
+        <!-- ===== Page Grid ===== -->
+        <div class="page-grid">
+
+            <!-- ===== Left Side ===== -->
+            <div>
+
+                <!-- Full Name -->
+                <div class="edit-card">
+
+                    <div class="input-title">
+                        Full Name
+                    </div>
+
+                    <input asp-for="FullName"
+                           class="brand-input rectangle" />
+
+                    <span asp-validation-for="FullName"
+                          class="text-danger"></span>
+
+                </div>
+
+                <!-- Email -->
+                <div class="edit-card">
+
+                    <div class="input-title">
+                        Email
+                    </div>
+
+                    <input asp-for="Email"
+                           class="brand-input rectangle" />
+
+                    <span asp-validation-for="Email"
+                          class="text-danger"></span>
+
+                </div>
+
+                <!-- Mobile -->
+                <div class="edit-card">
+
+                    <div class="input-title">
+                        Mobile Number
+                    </div>
+
+                    <input asp-for="MobileNumber"
+                           class="brand-input rectangle" />
+
+                    <span asp-validation-for="MobileNumber"
+                          class="text-danger"></span>
+
+                </div>
+
+                <!-- Job Title -->
+                <div class="edit-card">
+
+                    <div class="input-title">
+                        Job Title
+                    </div>
+
+                    <input asp-for="JobTitle"
+                           class="brand-input rectangle" />
+
+                    <span asp-validation-for="JobTitle"
+                          class="text-danger"></span>
+
+                </div>
+
+            </div>
+
+            <!-- ===== Right Side ===== -->
+            <div>
+
+                <!-- Hire Date -->
+                <div class="edit-card">
+
+                    <div class="card-title">
+                        Hire Date
+                    </div>
+
+                    <input asp-for="HireDate"
+                           type="date"
+                           class="brand-input rectangle" />
+
+                </div>
+
+                <!-- Department -->
+                <div class="edit-card">
+
+                    <div class="card-title">
+                        Department
+                    </div>
+
+                    <div class="defult-select select-item">
+
+                        <select asp-for="DepartmentId"
+                                class="select2"
+                                id="department-select">
+
+                            <option value="">
+                                Select Department
+                            </option>
+
+                            @foreach (var item in Model.Departments)
+                            {
+                                <option value="@item.Value">
+                                    @item.Text
+                                </option>
+                            }
+
+                        </select>
+
+                    </div>
+
+                    <span asp-validation-for="DepartmentId"
+                          class="text-danger"></span>
+
+                </div>
+                <div class="edit-card">
+
+                    <div class="card-title">
+                        Status
+                    </div>
+
+                    <div class="defult-select select-item">
+
+                        <select asp-for="IsActive"
+                                id="status-select"
+                                class="select2">
+
+                            <option value="true">Active</option>
+                            <option value="false">Inactive</option>
+
+                        </select>
+
+                    </div>
+
+                    <span asp-validation-for="IsActive"
+                          class="text-danger"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</form>
+
+@section Scripts {
+
+    <script src="~/modules/employee/create.js"></script>
+
+}

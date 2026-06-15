@@ -1,0 +1,11 @@
+﻿global using EmployeeManagementSystem.Domain.Entites;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using EmployeeManagementSystem.Domain.Interfaces.IDataTable;
+global using EmployeeManagementSystem.Infrastructure.DataTable;
+global using Microsoft.AspNetCore.Http;
+global using EmployeeManagementSystem.Domain.Interfaces.IRepo;
+global using EmployeeManagementSystem.Infrastructure.Data.Context;
+global using System.Linq.Expressions;
+global using EmployeeManagementSystem.Domain.Interfaces.IUnitOfWork;
+global using EmployeeManagementSystem.Infrastructure.Repos;

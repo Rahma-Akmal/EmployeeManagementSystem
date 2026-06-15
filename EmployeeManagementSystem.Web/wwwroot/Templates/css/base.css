@@ -1,0 +1,304 @@
+/* font */
+@font-face {
+    font-family: 'cairo';
+    src: url(../assets/fonts/Cairo-Regular.ttf), local('Cairo-Regular'), format('ttf');
+    font-display: swap;
+    font-weight: 100 400;
+}
+
+@font-face {
+    font-family: 'cairo';
+    src: url(../assets/fonts/Cairo-Medium.ttf), local('Cairo-Regular'), format('ttf');
+    font-display: swap;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'cairo';
+    src: url(../assets/fonts/Cairo-SemiBold.ttf), local('Cairo-SemiBold'), format('ttf');
+    font-display: swap;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'cairo';
+    src: url(../assets/fonts/Cairo-Bold.ttf), local('Cairo-Bold'), format('ttf');
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'cairo';
+    src: url(../assets/fonts/Cairo-ExtraBold.ttf), local('Cairo-Bold'), format('ttf');
+    font-display: swap;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'cairo';
+    src: url(../assets/fonts/Cairo-Black.ttf), local('Cairo-Bold'), format('ttf');
+    font-display: swap;
+    font-weight: 900;
+}
+
+
+@font-face {
+    font-family: "Rajdhani";
+    src: url(../assets/fonts/Rajdhani-SemiBold.ttf), format("ttf");
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Janna LT";
+    src: url(../assets/fonts/Janna-LT-Bold.ttf), format("ttf");
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rubik-semibold';
+    src: url(../assets/fonts/Rubik-SemiBold.ttf), local('Rubik-SemiBold'), format('ttf');
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rubik-medium';
+    src: url(../assets/fonts/Rubik-Medium.ttf), local('Rubik-SemiBold'), format('ttf');
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'inter';
+    src: url(../assets/fonts/Inter_18pt-Medium.ttf), local('Inter_18pt-Medium'), format('ttf');
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/poppins-regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/poppins-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/poppins-medium-webfont.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/poppins-semibold-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/poppins-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arvo';
+    src: url('../assets/fonts/Arvo-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arvo';
+    src: url('../assets/fonts/Arvo-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arvo';
+    src: url('../assets/fonts/Arvo-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../assets/fonts/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../assets/fonts/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../assets/fonts/FiraSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../assets/fonts/FiraSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background: #FAFCFC;
+    direction: rtl;
+    text-align: right;
+}
+
+
+ul { list-style: none; }
+
+button { cursor: pointer; border: none; background: none;}
+
+/* COLORS */
+
+/*:root {
+    --main: rgba(34, 56, 98, 1);
+    --secondary: #455956;
+    --stroke: #D8EBE7;
+    --disabled:#A0A1A4;
+    --bg-white: #FFFFFF;
+    --text-dark: #000000;
+    --text-light: #9B95AE;
+    --border-gray: #C1C1E0;
+   
+}*/
+
+:root {
+    --main: rgba(34, 56, 98, 1);
+    --main2: #122241;
+    --secondary: #455956;
+    --secondary2: #626a79;
+    --stroke: #D8EBE7;
+    --disabled: #A0A1A4;
+    --bg-white: #FFFFFF;
+    --text-dark: #000000;
+    --text-light: #9B95AE;
+    --border-gray: #C1C1E0;
+}
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+label{
+font-family: Cairo;
+font-weight: 500;
+
+font-size: 14px;
+
+line-height: 100%;
+letter-spacing: 0%;
+text-align: right;
+color: #56596D;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* SCROLL*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--stroke);
+    border-radius: 8px;
+}
+.btn:focus,
+.btn:active,
+.btn.active {
+    box-shadow: none !important;
+}
+
+.form-group {
+    margin-bottom: 0.5em;
+}
+
+.dataList-ddl {
+    position: fixed;
+    min-width: 200px;
+    padding: 0.75em;
+    margin: 0;
+    text-align: start;
+    max-height: 240px;
+    overflow-y: auto;
+    border: 1px solid #EBE0D8;
+    border-radius: 0.5em;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    z-index: 9999;
+    background-color: #fff;
+}
+.ddl-hidden {
+    display: none;
+}
+.dataList-ddl .dataList-item {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #EBE0D8;
+    cursor: default;
+}
+.dataList-ddl .dataList-item:last-of-type {
+    margin-bottom: 0;
+}
+.dataList-ddl::-webkit-scrollbar {
+    width: 3px !important;
+}
