@@ -101,10 +101,17 @@ $("#btnSave").on("click", function (e) {
                     }
 
                 },
-                error: function () {
+                error: function (xhr) {
                     keepBodyModalOpen();
+
+                    let errorMessage = "Unexpected Error";
+
+                    if (xhr.responseJSON && xhr.responseJSON.message) {
+                        errorMessage = xhr.responseJSON.message;
+                    }
+
                     showErrorModal(
-                        "Unexpected Error",
+                        errorMessage,
                         "/templates/assets/images/icons/alert.svg"
                     );
  

@@ -115,6 +115,7 @@ public class EmployeeService(IUnitOfWork _unitOfWork) : IEmployeeService
             employee.HireDate = dto.HireDate;
             employee.DepartmentId = dto.DepartmentId;
             employee.IsActive = dto.IsActive;
+            employee.UpdatedAt = DateTime.UtcNow;
 
             await _unitOfWork.Repository<Employee>().UpdateAsync(employee);
 
@@ -184,6 +185,6 @@ public class EmployeeService(IUnitOfWork _unitOfWork) : IEmployeeService
     public async Task<bool> IsEmailExistsAsync(string email, int currentId)
     {
         return await _unitOfWork.Repository<Employee>()
-            .ExistsAsync(e => e.Email == email && e.Id != currentId && !e.IsDeleted);
+            .ExistsAsync(e => e.Email == email && e.Id != currentId);
     }
 }

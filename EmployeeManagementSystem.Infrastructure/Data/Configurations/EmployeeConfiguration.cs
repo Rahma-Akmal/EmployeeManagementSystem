@@ -15,7 +15,8 @@ public class EmployeeConfiguration : IEntityTypeConfiguration<Employee>
             .HasMaxLength(200);
 
         builder.HasIndex(e => e.Email)
-            .IsUnique();
+          .IsUnique()
+          .HasFilter("[IsDeleted] = 0");
 
         builder.Property(e => e.MobileNumber)
             .IsRequired()
